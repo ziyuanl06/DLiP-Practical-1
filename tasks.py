@@ -1,4 +1,4 @@
-import numpy
+import numpy as np
 
 # Follow the tasks below to practice basic Python concepts.
 # Write your code in between the dashed lines.
@@ -31,7 +31,15 @@ def step(num):
 
 # Your code here:
 # -----------------------------------------------
-def ReLu
+def ReLu(arr, cutoff = 0):
+    res_arr = np.array([])
+    for num in arr:
+        if num < cutoff:
+            res_arr = np.append(res_arr, cutoff)
+        else:
+            res_arr = np.append(res_arr, num)
+    return(res_arr)
+
 
 
 # -----------------------------------------------
