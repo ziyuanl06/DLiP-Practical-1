@@ -55,7 +55,11 @@ def ReLu(arr, cutoff = 0):
 # Your code here:
 # -----------------------------------------------
 
-def neural_net_layer
+def neural_net_layer(array_1, array_2):
+    multiply = array_1 @ array_2
+    res = ReLu(multiply)
+    return(res)
+
 
 
 # ------------------------------------------
